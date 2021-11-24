@@ -13,16 +13,22 @@ public class Student {
 	private String lastName;
 	private String city;
 	
+	private Certificate certi;
+	
 	public Student() {
 		super();	
 	}
-	public Student(Long id, String firstName, String lastName, String city) {
+	
+
+	public Student(Long id, String firstName, String lastName, String city, Certificate certi) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.city = city;
+		this.certi = certi;
 	}
+
 
 	public Long getId() {
 		return id;
@@ -55,10 +61,24 @@ public class Student {
 	public void setCity(String city) {
 		this.city = city;
 	}
+	
+	public Certificate getCerti() {
+		return certi;
+	}
+
+
+	public void setCerti(Certificate certi) {
+		this.certi = certi;
+	}
+
+
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", city=" + city + "]";
+		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", city=" + city
+				+ ", certi=" + certi + "]";
 	}
+
+
 	
 	
 }

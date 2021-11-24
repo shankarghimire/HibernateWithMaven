@@ -1,5 +1,8 @@
 package com.ghimirsh.HibernateWithMaven;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Date;
 
 import org.hibernate.Session;
@@ -12,7 +15,7 @@ import org.hibernate.cfg.Configuration;
  */
 public class App 
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws IOException
     {
         System.out.println( "Project Started..." );
         ////Method I: (short cut)
@@ -37,6 +40,13 @@ public class App
         adr.setOpen(true);
         adr.setAddedDate(new Date());
         adr.setX(3.14);
+        
+        ////Reading Image
+        FileInputStream fis = new FileInputStream("src/main/java/p1.jpg");
+        byte[] data = new byte[fis.available()];
+        adr.setImage(data);
+        
+        fis.close();
         
            
         //System.out.println(factory);     

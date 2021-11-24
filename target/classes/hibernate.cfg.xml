@@ -14,5 +14,7 @@
 		<property name="hibernate.current_session_context_class">thread</property>
 		<mapping class="com.ghimirsh.HibernateWithMaven.Student"></mapping>
 		<mapping class="com.ghimirsh.HibernateWithMaven.Address"></mapping>
+		<mapping class="com.ghimirsh.HibernateWithMaven.map.Question"></mapping>
+		<mapping class="com.ghimirsh.HibernateWithMaven.map.Answer"></mapping>
 	</session-factory>
 </hibernate-configuration>

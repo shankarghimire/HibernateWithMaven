@@ -1,7 +1,6 @@
 package com.ghimirsh.HibernateWithMaven;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
 
@@ -59,6 +58,7 @@ public class App
         tx.commit();
         //session.getTransaction().commit();    
         session.close();
+        factory.close();
         System.out.println("objects saved to database!");
     }
 }

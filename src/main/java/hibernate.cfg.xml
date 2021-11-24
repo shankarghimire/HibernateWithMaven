@@ -16,5 +16,8 @@
 		<mapping class="com.ghimirsh.HibernateWithMaven.Address"></mapping>
 		<mapping class="com.ghimirsh.HibernateWithMaven.map.Question"></mapping>
 		<mapping class="com.ghimirsh.HibernateWithMaven.map.Answer"></mapping>
+		
+		<mapping class="com.ghimirsh.HibernateWithMaven.onetomany.Department"></mapping>
+		<mapping class="com.ghimirsh.HibernateWithMaven.onetomany.Employee"></mapping>
 	</session-factory>
 </hibernate-configuration>

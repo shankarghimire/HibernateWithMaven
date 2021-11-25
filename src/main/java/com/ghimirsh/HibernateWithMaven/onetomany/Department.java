@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
@@ -15,7 +16,7 @@ public class Department {
 	private int departmentId;
 	private String departmentName;
 	
-	@OneToMany(mappedBy = "department")
+	@OneToMany(mappedBy = "department", fetch=FetchType.EAGER)
 	private List<Employee>  employees;
 	
 	public Department() {
@@ -46,6 +47,11 @@ public class Department {
 	public void setEmployees(List<Employee> employees) {
 		this.employees = employees;
 	}
+//	@Override
+//	public String toString() {
+//		return "Department [departmentId=" + departmentId + ", departmentName=" + departmentName + ", employees="
+//				+ employees + "]";
+//	}
 	
 	
 	

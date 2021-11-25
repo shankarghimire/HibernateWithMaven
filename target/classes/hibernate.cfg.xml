@@ -14,10 +14,14 @@
 		<property name="hibernate.current_session_context_class">thread</property>
 		<mapping class="com.ghimirsh.HibernateWithMaven.Student"></mapping>
 		<mapping class="com.ghimirsh.HibernateWithMaven.Address"></mapping>
-		<mapping class="com.ghimirsh.HibernateWithMaven.map.Question"></mapping>
-		<mapping class="com.ghimirsh.HibernateWithMaven.map.Answer"></mapping>
+		<mapping class="com.ghimirsh.HibernateWithMaven.onetoone.Question"></mapping>
+		<mapping class="com.ghimirsh.HibernateWithMaven.onetoone.Answer"></mapping>
 		
 		<mapping class="com.ghimirsh.HibernateWithMaven.onetomany.Department"></mapping>
 		<mapping class="com.ghimirsh.HibernateWithMaven.onetomany.Employee"></mapping>
+		
+		<mapping class="com.ghimirsh.HibernateWithMaven.manytomany.Book"></mapping>
+		<mapping class="com.ghimirsh.HibernateWithMaven.manytomany.Author"></mapping>
+		
 	</session-factory>
 </hibernate-configuration>

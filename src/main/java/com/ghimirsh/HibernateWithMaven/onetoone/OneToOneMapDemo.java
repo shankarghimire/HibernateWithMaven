@@ -1,4 +1,4 @@
-package com.ghimirsh.HibernateWithMaven.map;
+package com.ghimirsh.HibernateWithMaven.onetoone;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
